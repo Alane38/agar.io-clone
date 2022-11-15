@@ -14,7 +14,7 @@ MasterServer.prototype.start = function() {
         res.end('127.0.0.1:443');
     });
 
-    this.httpServer.listen(this.port, function() {
+    this.httpServer.listen(this.port, "\\\\\IP\\\\\\", function() {
         console.log("[Master] Listening on port %d", this.port);
     }.bind(this));
 }
